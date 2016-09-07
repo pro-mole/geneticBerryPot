@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Genome Showcase</h1>
+        <script type="text/javascript" src="js/html.js"></script>
+        <script type="text/javascript" src="js/math.js"></script>
+        <script type="text/javascript" src="js/genetics.js"></script>
+        
+        <script type="text/javascript">
+            var body = document.getElementsByTagName("body")[0];
+            
+            for (var i=0; i < 4; i++)
+            {
+                var G = genome_random();
+                body.appendChild(genome_visualize(G));
+            }
+        </script>
+    </body>
+</html>
